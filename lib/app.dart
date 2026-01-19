@@ -4,7 +4,7 @@ import 'core/services/locator.dart';
 import 'core/services/navigation_service.dart';
 import 'core/theme/app_theme.dart';
 import 'features/settings/cubit/settings_cubit.dart';
-import 'features/example/view/example_view.dart';
+import 'features/main/view/main_view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
             theme: AppTheme.light,
             darkTheme: AppTheme.dark,
             themeMode: state.themeMode,
-            home: const ExampleView(),
+            home: const MainView(),
           );
         },
       ),
